@@ -1,0 +1,47 @@
+.fuel { grid-area: fuel; }
+.destination { grid-area: destination; }
+.food { grid-area: food; }
+.water { grid-area: water; }
+.oxygen { grid-area: oxygen; }
+
+
+
+/* For mobile: */
+body{
+    text-align: center;
+}
+
+.container{
+    display: grid;
+    grid-template-areas:
+    'fuel fuel fuel fuel'
+    'destination destination destination destination'
+    'food food water water'
+    'oxygen oxygen oxygen oxygen';  
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
+    padding: 15px;
+/*
+  grid-gap: 10px;
+  padding: 10px;
+*/
+
+}
+
+@media only screen and (min-width: 768px) {
+    /* For tablets: */
+    
+}
+
+@media only screen and (min-width: 1024px) {
+    /* For desktop: */
+     .container {
+        display: grid;
+        grid-template-areas:
+        'fuel fuel fuel fuel fuel destination destination destination destination destination destination destination '
+        'food food food food food oxygen oxygen oxygen oxygen oxygen oxygen oxygen '
+        'water water water water water oxygen oxygen oxygen oxygen oxygen oxygen oxygen';  
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+    }    
+}
