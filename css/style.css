@@ -4,26 +4,39 @@ body {
     background-color: #23253B;
 }
 
-.wrapper {
-  max-width: 800px;
-  margin: 50px auto;
-}
+h1, h2, p {
+/*
+    font-weight: 200;
+    font-size: 3em;
+*/
+    color: #fff;
 
-h1 {
-  font-weight: 200;
-  font-size: 3em;
-  margin: 0 0 0.1em 0;
-}
-
-h2 {
-  font-weight: 200;
-  font-size: 0.9em;
-  margin: 0 0 50px;
-  color: #999;
 }
 
 a {
-  margin-top: 50px;
-  display: block;
-  color: #3e95cd;
+    margin-top: 50px;
+    display: block;
+    color: #3e95cd;
+}
+
+@media only screen and (max-width: 375px) {
+    /* For mobile: */
+    .container {
+        max-width: 345px;
+        margin: 15px auto;
+    }
+    
+    .container>div {
+        background-color:rgba(41,57,85,0.7);
+        padding:20px;
+    }
+}
+
+
+@media only screen and (min-width: 375px) {
+    /* For tablets: */
+}
+
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
 }
