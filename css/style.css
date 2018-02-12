@@ -19,24 +19,31 @@ a {
     color: #3e95cd;
 }
 
+ .container>div {
+        background-color:rgba(41,57,85,0.7);
+    }
+
 @media only screen and (max-width: 375px) {
     /* For mobile: */
     .container {
         max-width: 345px;
         margin: 15px auto;
-    }
-    
-    .container>div {
-        background-color:rgba(41,57,85,0.7);
-        padding:20px;
-    }
+    }   
 }
 
 
 @media only screen and (min-width: 375px) {
     /* For tablets: */
+    .container {
+        max-width: 684px;
+        margin: 42px auto;
+    }   
 }
 
 @media only screen and (min-width: 768px) {
     /* For desktop: */
+     .container {
+        max-width: 1180px;
+        margin: 50px auto;
+    }   
 }
