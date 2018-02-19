@@ -13,27 +13,69 @@ var myChart = new Chart(ctx, {
       { 
         data: normal,
         label: "normal",
-        borderColor: "#D40E0E",
-        fill: false
+        borderColor: "#D40E0E"
       },
       { 
         data: CO2,
         label: "CO2",
-        borderColor: "#0ED4D4",
-        fill: false
+        borderColor: "#0ED4D4"
       },    
     ]
   }
 });
 
- var destChart = document.getElementById('destinationChart').easyPieChart;
-var myDestChart = new Chart(destChart, {
- 
-    scaleColor: "#ecf0f1",
-    lineWidth: 20,
-    lineCap: 'butt',
-    barColor: '#1abc9c',
-    trackColor:	"#ecf0f1",
-    size: 160,
-    animate: 500
+var traveled = [70, 30];
+var ctx = document.getElementById("destinationChart")
+var destinationChart = new Chart(ctx, {
+  type: 'doughnut',
+  data: {
+    datasets: [
+      { 
+        data: traveled,
+        label: ['traveled', 'togo'],
+        backgroundColor: ['#0ED4D4', '#D40E0E'],
+        borderWidth: 0
+      }]
+  },
+    options:{
+        cutoutPercentage: [80],
+    }
 });
+
+var food = [50, 50];
+var ctx = document.getElementById("foodChart")
+var destinationChart = new Chart(ctx, {
+  type: 'doughnut',
+  data: {
+    datasets: [
+      { 
+        data: food,
+        label: ['food', 'gone'],
+        backgroundColor: ['#0ED4D4', '#D40E0E'],
+        borderWidth: 0
+      }]
+  },
+    options:{
+        cutoutPercentage: [80]
+    }
+});
+
+var water = [50, 50];
+var ctx = document.getElementById("waterChart")
+var destinationChart = new Chart(ctx, {
+  type: 'doughnut',
+  data: {
+    datasets: [
+      { 
+        data: water,
+        labels: ['water', 'gone'],
+        backgroundColor: ['#0ED4D4', '#D40E0E'],
+        borderWidth: 0
+      }]
+  },
+    options:{
+        cutoutPercentage: [80]
+    }
+});
+
+
