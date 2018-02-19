@@ -43,5 +43,11 @@ body{
         'water water water water water oxygen oxygen oxygen oxygen oxygen oxygen oxygen';  
         grid-column-gap: 20px;
         grid-row-gap: 20px;
-    }    
+    }  
+    
+    #oxygenChart {
+        width: 300px !important;
+        height: 100% !important;
+        display: flex !important;
+    }
 }
