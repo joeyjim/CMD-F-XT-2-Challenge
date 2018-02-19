@@ -32,7 +32,7 @@ var destinationChart = new Chart(ctx, {
     datasets: [
       { 
         data: traveled,
-        label: ['traveled', 'togo'],
+        labels: ['traveled', 'togo'],
         backgroundColor: ['#0ED4D4', '#D40E0E'],
         borderWidth: 0
       }]
@@ -50,7 +50,7 @@ var destinationChart = new Chart(ctx, {
     datasets: [
       { 
         data: food,
-        label: ['food', 'gone'],
+        labels: ['food', 'gone'],
         backgroundColor: ['#0ED4D4', '#D40E0E'],
         borderWidth: 0
       }]
