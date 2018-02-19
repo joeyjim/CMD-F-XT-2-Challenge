@@ -3,9 +3,9 @@
   <head>
    <meta charset="UTF-8" />
     <title>Challenge</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1">  
     
+    <meta name="viewport" content="width=device-width, initial-scale=1">  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>
     <link rel="stylesheet" type="text/css" href="css/style.css">
      <link rel="stylesheet" type="text/css" href="css/layout.css">
   </head>
@@ -24,14 +24,17 @@
         <div class="destination">      
             <h1>Destination</h1>
            <canvas id="destinationChart" ></canvas>
+           <p id="countdown">100.000 KM to go</p>
         </div>
         <div class="food">
             <h1>food</h1>
             <canvas id="foodChart" ></canvas>
+            <p>50 left</p>
         </div>
         <div class="water">
             <h1>water</h1>
             <canvas id="waterChart" ></canvas>
+            <p>100 left</p>
         </div>
         <div class="oxygen">
             <h1>oxygen</h1>
@@ -39,7 +42,7 @@
         </div>
     </main>
     
-
+    
     <script src="js/script.js"></script>
   </body>
 </html>

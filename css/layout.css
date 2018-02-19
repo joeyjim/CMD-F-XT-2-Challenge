@@ -9,15 +9,16 @@
 /* For mobile: */
 body{
     text-align: center;
+    width: 100%;
 }
 
 .container{
     display: grid;
     grid-template-areas:
-    'fuel fuel fuel fuel'
-    'destination destination destination destination'
-    'food food water water'
-    'oxygen oxygen oxygen oxygen';  
+        'fuel fuel'
+        'destination destination'
+        'food water'
+        'oxygen oxygen';  
     grid-column-gap: 15px;
     grid-row-gap: 15px;
     padding: 15px;
