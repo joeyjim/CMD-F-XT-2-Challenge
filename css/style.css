@@ -3,23 +3,7 @@ body {
     background-color: #23253B;
     margin: 0;
     box-sizing: border-box;
-}
-
-h1,
-h2,
-p,
-span {
-    /*
-    font-weight: 200;
-    font-size: 3em;
-*/
-    color: #fff;
-
-}
-
-h1 {
-    font-size: 15px;
-
+    text-align: center;
 }
 
 .container > div {
@@ -60,5 +44,6 @@ h1 {
   height: 100%;
   min-height: 250px;
 }
+
 
 

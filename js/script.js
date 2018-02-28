@@ -78,7 +78,11 @@ var destinationChart = new Chart(ctx, {
     }
 });
 
-var countdown = document.getElementById('countdown');
+
+
+
+
+
 
 
 
